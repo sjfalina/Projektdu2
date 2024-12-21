@@ -1,5 +1,5 @@
 createControlElements();
-console.log("remove");
+
 
 const removeCreator = document.createElement("div");
 removeCreator.classList.add("remove")

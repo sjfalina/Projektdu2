@@ -35,4 +35,8 @@ const howMany = document.createElement("p");
 const controls = document.getElementById("controls");
 const numbers = document.getElementById("numbers");
 const creator = document.getElementById("creator");
-createControlElements();
+
+createButton.addEventListener("click", function () {
+    numbers.innerHTML = "";
+    createRandomNumbers(howInput.value);
+});
