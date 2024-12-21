@@ -19,6 +19,16 @@ function getRandomNumber() {
     return Math.floor(100 * Math.random());
 }
 
+function createRandomNumbers(amount) {
+    for (let i = 0; i < amount; i++) {
+        let number = getRandomNumber();
+        let div = document.createElement("div");
+        div.classList.add("numberDiv")
+        div.textContent = number;
+        numbers.appendChild(div);
+    }
+}
+
 const createButton = document.createElement("button")
 const howInput = document.createElement("input");
 const howMany = document.createElement("p");
