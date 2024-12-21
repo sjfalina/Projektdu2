@@ -8,3 +8,36 @@ main {
 a {
     color: black;
 }
+
+
+#controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+
+#numbers {
+    margin: auto;
+    margin-top: 15px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+
+
+}
+
+.numberDiv {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 25%;
+
+}
