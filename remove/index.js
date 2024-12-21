@@ -32,3 +32,21 @@ newRandomButton.addEventListener("click", function () {
         }
     }
 })
+
+removeButton.addEventListener("click", function () {
+    let counter = 0;
+    for (let div of numbers.childNodes) {
+        if (div.textContent == newInput.value) {
+            counter++;
+            div.style.backgroundColor = "red";
+            div.textContent = "X";
+        }
+    }
+    if (counter == 0) {
+        removeInput.value = "Nothing to remove";
+
+    } else {
+        removeInput.value = `${newInput.value} was removed ${counter} times`;
+
+    }
+})
