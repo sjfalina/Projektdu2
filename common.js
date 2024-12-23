@@ -39,4 +39,6 @@ const creator = document.getElementById("creator");
 createButton.addEventListener("click", function () {
     numbers.innerHTML = "";
     createRandomNumbers(howInput.value);
+    sumOfAll();
 });
+
