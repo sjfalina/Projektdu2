@@ -9,6 +9,16 @@ function sumOfAll() {
     }
     return sum;
 }
+function addMarked(target) {
+    let sum = parseFloat(sumOfMarkedBox.value) || 0;
+    let newAdd = parseFloat(target.textContent);
+
+    if (!isNaN(newAdd)) {
+        sum += newAdd;
+    }
+    return sum;
+
+}
 
 
 const sumOfText = document.createElement("div");
@@ -48,20 +58,17 @@ createButton.addEventListener("click", function () {
 });
 
 numbers.addEventListener("click", function (e) {
-    e.target.style.backgroundColor = "green";
+    e.target.classList.add("mark");
     sumOfMarkedBox.value = addMarked(e.target);
 
 });
 
-function addMarked(target) {
-    let sum = parseFloat(sumOfMarkedBox.value) || 0;
-    let newAdd = parseFloat(target.textContent);
-
-    if (!isNaN(newAdd)) {
-        sum += newAdd;
+resetSumButton.addEventListener("click", function () {
+    for (let div of numbers.childNodes) {
+        div.classList.remove("mark");
     }
-    return sum;
-
+    sumOfMarkedBox.value = null;
 }
+)
 
 
