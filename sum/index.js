@@ -58,9 +58,10 @@ createButton.addEventListener("click", function () {
 });
 
 numbers.addEventListener("click", function (e) {
-    e.target.classList.add("mark");
-    sumOfMarkedBox.value = addMarked(e.target);
-
+    if (e.target.className == "numberDiv") {
+        e.target.classList.add("mark");
+        sumOfMarkedBox.value = addMarked(e.target);
+    }
 });
 
 resetSumButton.addEventListener("click", function () {
