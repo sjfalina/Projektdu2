@@ -9,6 +9,8 @@ function sumOfAll() {
     }
     return sum;
 }
+
+
 const sumOfText = document.createElement("div");
 sumOfText.textContent = "Sum of all:"
 sumOfText.style.display = "inline";
@@ -18,15 +20,48 @@ creator.appendChild(sumOfAllDiv);
 sumOfAllDiv.appendChild(sumOfText);
 
 const sumBox = document.createElement("div");
-sumBox.style.border = "1px solid black";
-sumBox.style.width = "80px";
-sumBox.style.margin = "5px";
-sumBox.style.textAlign = "center";
-sumBox.style.display = "inline-block";
+sumBox.classList.add("inputBox");
 sumOfAllDiv.appendChild(sumBox);
 
 sumBox.textContent = sumOfAll();
 
+const sumOfMarked = document.createElement("div");
+creator.appendChild(sumOfMarked);
+const sumOfMarkedText = document.createElement("div");
+sumOfMarkedText.classList.add("text");
+sumOfMarkedText.style.display = "inline";
+sumOfMarkedText.textContent = "Sum of marked:";
+sumOfMarked.appendChild(sumOfMarkedText);
+
+const sumOfMarkedBox = document.createElement("input");
+sumOfMarkedBox.placeholder = "-";
+sumOfMarkedBox.classList.add("inputBox");
+sumOfMarked.appendChild(sumOfMarkedBox);
+
+const resetSumButton = document.createElement("button");
+resetSumButton.textContent = "Reset";
+resetSumButton.style.margin = "2px 5px";
+sumOfMarked.appendChild(resetSumButton);
+
 createButton.addEventListener("click", function () {
     sumBox.textContent = sumOfAll();
 });
+
+numbers.addEventListener("click", function (e) {
+    e.target.style.backgroundColor = "green";
+    sumOfMarkedBox.value = addMarked(e.target);
+
+});
+
+function addMarked(target) {
+    let sum = parseFloat(sumOfMarkedBox.value) || 0;
+    let newAdd = parseFloat(target.textContent);
+
+    if (!isNaN(newAdd)) {
+        sum += newAdd;
+    }
+    return sum;
+
+}
+
+
