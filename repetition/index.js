@@ -44,7 +44,6 @@ function notInPlace() {
     return numbersNotInPlace;
 }
 
-console.log(notInPlace())
 
 const mostRepsText = document.createElement("p");
 mostRepsText.textContent = "Most repeated number(s):";
