@@ -23,6 +23,29 @@ function checkRepeats() {
     return { repeatedNumbers, repeats }
 }
 
+function compareNumbers(a, b) {
+    return a - b;
+}
+
+function notInPlace() {
+    let inPlace = [];
+    let numbersNotInPlace = [];
+    for (let node of numbers.childNodes) {
+        if (!inPlace.includes(node.textContent)) {
+            inPlace.push(parseFloat(node.textContent));
+        }
+    }
+    inPlace.sort(compareNumbers)
+    for (let i = 0; i < 100; i++) {
+        if (!inPlace.includes(i)) {
+            numbersNotInPlace.push(i);
+        }
+    }
+    return numbersNotInPlace;
+}
+
+console.log(notInPlace())
+
 const mostRepsText = document.createElement("p");
 mostRepsText.textContent = "Most repeated number(s):";
 mostRepsText.style.display = "inline";
@@ -48,3 +71,20 @@ if (result.repeats > 1) {
         }
     }
 }
+
+const notInPlaceDiv = document.createElement("div");
+notInPlaceDiv.style.display = "flex";
+notInPlaceDiv.style.margin = "10px";
+creator.appendChild(notInPlaceDiv);
+const notInResult = notInPlace();
+const numbersNotInText = document.createElement("p");
+numbersNotInText.style.display = "inline-box";
+numbersNotInText.textContent = "Numbers not in place: ";
+const notInPlaceBox = document.createElement("div");
+notInPlaceBox.textContent = `${notInResult.join(", ")}`
+notInPlaceBox.style.width = "250px";
+notInPlaceBox.style.border = "1px solid black";
+notInPlaceBox.style.padding = "8px";
+notInPlaceBox.style.display = "inline-box";
+notInPlaceDiv.appendChild(numbersNotInText);
+notInPlaceDiv.appendChild(notInPlaceBox);
