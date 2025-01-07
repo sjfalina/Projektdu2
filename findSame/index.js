@@ -1,0 +1,2 @@
+createControlElements();
+createRandomNumbers(howInput.value);
