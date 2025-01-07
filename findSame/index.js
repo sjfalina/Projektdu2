@@ -15,7 +15,7 @@ findText.textContent = startMessage;
 numbers.addEventListener("click", function (e) {
     if (e.target.className == "numberDiv") {
         e.target.classList.add("mark");
-        let counter = 1;
+        let counter = 0;
         for (let node of numbers.childNodes) {
             if (node.textContent == e.target.textContent) {
                 node.classList.add("mark");
