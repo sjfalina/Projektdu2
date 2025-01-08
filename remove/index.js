@@ -21,9 +21,9 @@ newRandomButton.addEventListener("click", function () {
     newInput.value = getRandomNumber();
 
     for (let div of numbers.childNodes) {
-        div.classList.remove("mark");
+        div.classList.remove("markOrange");
         if (div.textContent == newInput.value) {
-            div.classList.add("mark")
+            div.classList.add("markOrange")
         }
     }
 })

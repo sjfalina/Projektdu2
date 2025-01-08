@@ -56,14 +56,15 @@ createButton.addEventListener("click", function () {
 
 numbers.addEventListener("click", function (e) {
     if (e.target.className == "numberDiv") {
-        e.target.classList.add("mark");
+        e.target.classList.add("markGreen");
         sumOfMarkedBox.value = addMarked(e.target);
+
     }
 });
 
 resetSumButton.addEventListener("click", function () {
     for (let div of numbers.childNodes) {
-        div.classList.remove("mark");
+        div.classList.remove("markGreen");
     }
     sumOfMarkedBox.value = null;
 }

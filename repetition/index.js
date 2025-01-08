@@ -62,8 +62,7 @@ if (result.repeats > 1) {
     for (let number of result.repeatedNumbers) {
         for (let node of numbers.childNodes) {
             if (number == node.textContent) {
-                node.classList.add("mark");
-                node.style.backgroundColor = "skyblue";
+                node.classList.add("markBlue");
             }
         }
     }

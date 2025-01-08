@@ -11,14 +11,14 @@ findText.textContent = startMessage;
 
 numbers.addEventListener("click", function (e) {
     if (e.target.className == "numberDiv") {
-        e.target.classList.add("mark");
+        e.target.classList.add("markGreen");
         let counter = 0;
         for (let node of numbers.childNodes) {
             if (node.textContent == e.target.textContent) {
-                node.classList.add("mark");
+                node.classList.add("markGreen");
                 counter++;
             } else {
-                node.classList.remove("mark");
+                node.classList.remove("markGreen");
             }
         }
         if (counter == 1) {
@@ -32,8 +32,8 @@ numbers.addEventListener("click", function (e) {
 
 resetButton.addEventListener("click", function () {
     for (let node of numbers.childNodes) {
-        if (node.classList.contains("mark")) {
-            node.classList.remove("mark");
+        if (node.classList.contains("markGreen")) {
+            node.classList.remove("markGreen");
         }
     }
     findText.textContent = startMessage;

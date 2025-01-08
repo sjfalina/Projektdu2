@@ -42,8 +42,20 @@ a {
 
 }
 
-.mark {
+.markOrange {
     background-color: orange;
+}
+
+.markGreen {
+    background-color: lightgreen;
+}
+
+.markBlue {
+    background-color: skyblue;
+}
+
+.markRed {
+    background-color: red;
 }
 
 
