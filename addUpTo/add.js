@@ -13,7 +13,7 @@ findCellsButton.textContent = "Find Cells that Add Up";
 
 findCellsButton.addEventListener("click", function () {
     for (let node of numbers.childNodes) {
-        node.classList.remove("mark");
+        node.classList.remove("markGreen");
     }
     let found = false;
     for (let node1 of numbers.childNodes) {
@@ -21,14 +21,15 @@ findCellsButton.addEventListener("click", function () {
         for (let node2 of numbers.childNodes) {
             let n2value = parseFloat(node2.textContent);
             if (n1value + n2value == addInput.value) {
-                node1.classList.add("mark");
-                node2.classList.add("mark");
+                node1.classList.add("markGreen");
+                node2.classList.add("markGreen");
                 found = true;
                 break;
             }
-            if (found) {
-                break;
-            }
+
+        }
+        if (found) {
+            break;
         }
     }
 })
