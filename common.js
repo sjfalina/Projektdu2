@@ -1,3 +1,10 @@
+function homeLink() {
+    let home = document.createElement("a");
+    home.setAttribute("href", "../index.html");
+    document.getElementById("top").appendChild(home);
+    home.textContent = "Home";
+}
+
 function createControlElements() {
     let howManyDiv = document.createElement("div");
     creator.appendChild(howManyDiv);
@@ -42,3 +49,6 @@ createButton.addEventListener("click", function () {
 
 });
 
+homeLink();
+createControlElements();
+createRandomNumbers(howInput.value);

@@ -1,6 +1,3 @@
-createControlElements();
-createRandomNumbers(howInput.value);
-
 function sumOfAll() {
     let sum = 0;
     for (let number of numbers.childNodes) {

@@ -1,6 +1,3 @@
-createControlElements();
-
-
 const removeCreator = document.createElement("div");
 removeCreator.classList.add("remove")
 removeCreator.style.display = "flex";
@@ -19,8 +16,6 @@ removeCreator.appendChild(removeButton);
 const removeInput = document.createElement("input");
 removeInput.placeholder = "-";
 removeCreator.appendChild(removeInput);
-
-createRandomNumbers(howInput.value);
 
 newRandomButton.addEventListener("click", function () {
     newInput.value = getRandomNumber();

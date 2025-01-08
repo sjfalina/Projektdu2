@@ -1,6 +1,3 @@
-createControlElements();
-createRandomNumbers(howInput.value);
-
 const findSameDiv = document.createElement("div");
 creator.appendChild(findSameDiv);
 const findText = document.createElement("p");

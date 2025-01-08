@@ -1,6 +1,3 @@
-createControlElements();
-createRandomNumbers(howInput.value);
-
 function checkRepeats() {
 
     let repeatedNumbers = [];
@@ -66,6 +63,7 @@ if (result.repeats > 1) {
         for (let node of numbers.childNodes) {
             if (number == node.textContent) {
                 node.classList.add("mark");
+                node.style.backgroundColor = "skyblue";
             }
         }
     }

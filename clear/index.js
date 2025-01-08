@@ -1,6 +1,3 @@
-createControlElements();
-createRandomNumbers(howInput.value);
-
 const fillButton = document.createElement("button");
 fillButton.textContent = "Fill cleared";
 creator.appendChild(fillButton);

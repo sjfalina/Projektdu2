@@ -1,6 +1,3 @@
-createControlElements();
-createRandomNumbers(howInput.value);
-
 const addUpDiv = document.createElement("div");
 creator.appendChild(addUpDiv);
 const addUpText = document.createElement("p");
