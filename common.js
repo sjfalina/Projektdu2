@@ -7,6 +7,7 @@ function homeLink() {
 
 function createControlElements() {
     let howManyDiv = document.createElement("div");
+    howManyDiv.classList.add("common")
     creator.appendChild(howManyDiv);
     howMany.textContent = "How many numbers in the grid?";
     howMany.style.display = "inline";
@@ -42,6 +43,10 @@ const howMany = document.createElement("p");
 const controls = document.getElementById("controls");
 const numbers = document.getElementById("numbers");
 const creator = document.getElementById("creator");
+
+howInput.classList.add("inputBox")
+createButton.classList.add("button");
+
 
 createButton.addEventListener("click", function () {
     numbers.innerHTML = "";

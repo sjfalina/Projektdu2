@@ -1,7 +1,14 @@
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("Oswald,Roboto_Condensed/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf");
+
+}
+
 main {
     padding-top: 20px;
     font-size: 20px;
     text-align: center;
+    font-family: "Roboto Condensed";
 
 }
 
@@ -66,5 +73,11 @@ a {
     text-align: center;
     display: inline-block;
     margin: 2px 5px;
+    font-family: "Roboto Condensed";
 
+}
+
+.button {
+    height: 28px;
+    font: "Roboto Condensed";
 }
