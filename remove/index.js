@@ -5,16 +5,20 @@ removeCreator.style.gap = "5px";
 creator.appendChild(removeCreator);
 const newRandomButton = document.createElement("button");
 newRandomButton.textContent = "New random number";
+newRandomButton.classList.add("button");
 removeCreator.appendChild(newRandomButton);
 const newInput = document.createElement("input");
 newInput.style.marginRight = "5px";
 newInput.placeholder = "-";
+newInput.classList.add("inputBox");
 removeCreator.appendChild(newInput);
 const removeButton = document.createElement("button");
 removeButton.textContent = "Remove";
 removeCreator.appendChild(removeButton);
 const removeInput = document.createElement("input");
 removeInput.placeholder = "-";
+removeInput.classList.add("inputBox");
+removeInput.id = "removed";
 removeCreator.appendChild(removeInput);
 
 newRandomButton.addEventListener("click", function () {

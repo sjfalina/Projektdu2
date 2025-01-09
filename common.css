@@ -20,6 +20,7 @@ a {
 #controls {
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     gap: 5px;
     justify-content: center;
 }
@@ -74,6 +75,8 @@ a {
     display: inline-block;
     margin: 2px 5px;
     font-family: "Roboto Condensed";
+    font-size: 16px;
+    padding-top: 2px;
 
 }
 
@@ -81,3 +84,47 @@ a {
     height: 28px;
     font: "Roboto Condensed";
 }
+
+#removed {
+    width: 200px;
+}
+
+#repetitions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inline {
+    display: flex;
+    margin: 10px, 20px;
+}
+
+#reps {
+    margin-top: 20px;
+    flex-grow: 2;
+    width: 400px;
+
+}
+
+#notInPlace {
+    width: 400px;
+    height: min-content;
+    flex-shrink: 1;
+}
+
+/*mostReps.style.width="200px";
+mostReps.style.height="50px";
+mostReps.style.padding="8px";
+mostReps.style.margin="3px";
+mostReps.style.border="1px solid black";
+mostReps.style.display="inline";
+
+
+notInPlaceBox.style.width = "250px";
+notInPlaceBox.style.border = "1px solid black";
+notInPlaceBox.style.padding = "8px";
+notInPlaceBox.style.display = "inline-box";
+
+notInPlaceDiv.style.display = "flex";
+notInPlaceDiv.style.margin = "10px";*/

@@ -48,6 +48,7 @@ sumOfMarked.appendChild(sumOfMarkedBox);
 const resetSumButton = document.createElement("button");
 resetSumButton.textContent = "Reset";
 resetSumButton.style.margin = "2px 5px";
+resetSumButton.classList.add("button");
 sumOfMarked.appendChild(resetSumButton);
 
 createButton.addEventListener("click", function () {

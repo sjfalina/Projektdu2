@@ -42,18 +42,9 @@ function notInPlace() {
 }
 
 
-const mostRepsText = document.createElement("p");
-mostRepsText.textContent = "Most repeated number(s):";
-mostRepsText.style.display = "inline";
-creator.appendChild(mostRepsText);
-const mostReps = document.createElement("div");
-mostReps.style.width = "200px";
-mostReps.style.height = "50px";
-mostReps.style.padding = "8px";
-mostReps.style.margin = "3px";
-mostReps.style.border = "1px solid black";
-mostReps.style.display = "inline";
-creator.appendChild(mostReps);
+
+const mostReps = document.getElementById("mostReps");
+mostReps.id = "reps";
 const result = checkRepeats();
 
 if (result.repeats > 1) {
@@ -68,19 +59,11 @@ if (result.repeats > 1) {
     }
 }
 
-const notInPlaceDiv = document.createElement("div");
-notInPlaceDiv.style.display = "flex";
-notInPlaceDiv.style.margin = "10px";
-creator.appendChild(notInPlaceDiv);
+
 const notInResult = notInPlace();
-const numbersNotInText = document.createElement("p");
-numbersNotInText.style.display = "inline-box";
-numbersNotInText.textContent = "Numbers not in place: ";
-const notInPlaceBox = document.createElement("div");
+const notInPlaceBox = document.getElementById("notInPlace")
+notInPlaceBox.classList.add("inputBox");
 notInPlaceBox.textContent = `${notInResult.join(", ")}`
-notInPlaceBox.style.width = "250px";
-notInPlaceBox.style.border = "1px solid black";
-notInPlaceBox.style.padding = "8px";
-notInPlaceBox.style.display = "inline-box";
-notInPlaceDiv.appendChild(numbersNotInText);
-notInPlaceDiv.appendChild(notInPlaceBox);
+notInPlaceBox.style.maxHeight = "fit-content";
+
+
