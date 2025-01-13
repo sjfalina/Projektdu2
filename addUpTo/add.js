@@ -1,12 +1,15 @@
 const addUpDiv = document.createElement("div");
 creator.appendChild(addUpDiv);
+addUpDiv.classList.add("centered");
 const addUpText = document.createElement("p");
 const addInput = document.createElement("input");
 addInput.value = 179;
+addInput.classList.add("inputBox");
 const findCellsButton = document.createElement("button");
-creator.appendChild(addUpText);
-creator.appendChild(addInput);
-creator.appendChild(findCellsButton);
+findCellsButton.classList.add("button");
+addUpDiv.appendChild(addUpText);
+addUpDiv.appendChild(addInput);
+addUpDiv.appendChild(findCellsButton);
 
 addUpText.textContent = "Add up to: ";
 findCellsButton.textContent = "Find Cells that Add Up";

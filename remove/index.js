@@ -1,5 +1,5 @@
 const removeCreator = document.createElement("div");
-removeCreator.classList.add("remove")
+removeCreator.classList.add("centered");
 creator.appendChild(removeCreator);
 const newRandomButton = document.createElement("button");
 newRandomButton.textContent = "New random number";

@@ -85,10 +85,11 @@ a {
     font: "Roboto Condensed";
 }
 
-.remove {
+.centered {
     display: flex;
     justify-content: center;
     gap: 5px;
+    align-items: center;
 }
 
 #removed {
@@ -103,7 +104,7 @@ a {
 
 .inline {
     display: flex;
-    margin: 10px, 20px;
+
 }
 
 #reps {
