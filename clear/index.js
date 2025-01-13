@@ -1,4 +1,5 @@
 const fillButton = document.createElement("button");
+fillButton.classList.add("button");
 fillButton.textContent = "Fill cleared";
 creator.appendChild(fillButton);
 

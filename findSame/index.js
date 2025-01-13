@@ -1,8 +1,10 @@
 const findSameDiv = document.createElement("div");
+findSameDiv.classList.add("centered");
 creator.appendChild(findSameDiv);
 const findText = document.createElement("p");
 findSameDiv.appendChild(findText);
 const resetButton = document.createElement("button");
+resetButton.classList.add("button");
 resetButton.textContent = "Reset";
 findSameDiv.appendChild(resetButton);
 

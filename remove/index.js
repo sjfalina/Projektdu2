@@ -11,6 +11,7 @@ newInput.classList.add("inputBox");
 removeCreator.appendChild(newInput);
 const removeButton = document.createElement("button");
 removeButton.textContent = "Remove";
+removeButton.classList.add("button");
 removeCreator.appendChild(removeButton);
 const removeInput = document.createElement("input");
 removeInput.placeholder = "-";
