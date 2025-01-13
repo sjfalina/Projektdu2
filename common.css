@@ -85,6 +85,12 @@ a {
     font: "Roboto Condensed";
 }
 
+.remove {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
 #removed {
     width: 200px;
 }
@@ -112,19 +118,3 @@ a {
     height: min-content;
     flex-shrink: 1;
 }
-
-/*mostReps.style.width="200px";
-mostReps.style.height="50px";
-mostReps.style.padding="8px";
-mostReps.style.margin="3px";
-mostReps.style.border="1px solid black";
-mostReps.style.display="inline";
-
-
-notInPlaceBox.style.width = "250px";
-notInPlaceBox.style.border = "1px solid black";
-notInPlaceBox.style.padding = "8px";
-notInPlaceBox.style.display = "inline-box";
-
-notInPlaceDiv.style.display = "flex";
-notInPlaceDiv.style.margin = "10px";*/

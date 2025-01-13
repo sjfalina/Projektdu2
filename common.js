@@ -44,7 +44,7 @@ const controls = document.getElementById("controls");
 const numbers = document.getElementById("numbers");
 const creator = document.getElementById("creator");
 
-howInput.classList.add("inputBox")
+howInput.classList.add("inputBox");
 createButton.classList.add("button");
 
 

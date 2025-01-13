@@ -1,14 +1,11 @@
 const removeCreator = document.createElement("div");
 removeCreator.classList.add("remove")
-removeCreator.style.display = "flex";
-removeCreator.style.gap = "5px";
 creator.appendChild(removeCreator);
 const newRandomButton = document.createElement("button");
 newRandomButton.textContent = "New random number";
 newRandomButton.classList.add("button");
 removeCreator.appendChild(newRandomButton);
 const newInput = document.createElement("input");
-newInput.style.marginRight = "5px";
 newInput.placeholder = "-";
 newInput.classList.add("inputBox");
 removeCreator.appendChild(newInput);
