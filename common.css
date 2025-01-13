@@ -47,6 +47,7 @@ a {
     height: 40px;
     background-color: lightgray;
     border-radius: 25%;
+    cursor: pointer;
 
 }
 
